@@ -1,0 +1,54 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  
+  
+- story: python
+  steps:
+  - intent: python_intro
+  - action: utter_python
+  - intent: machinelearning_intro
+  - action: utter_machinelearning
+  - intent: datascience_intro
+  - action: utter_datascience
+  - intent: nlp_intro
+  - action: utter_nlp
+  
+  
+- story: progarmming
+  steps:
+  - intent: programming_intro
+  - action: utter_programming
+  - intent: C_intro
+  - action: utter_C
+  - intent: C++_intro
+  - action: utter_C++
+  - intent: java_intro
+  - action: utter_java

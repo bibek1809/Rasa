@@ -1,0 +1,66 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - python_intro
+  - machinelearning_intro
+  - datascience_intro
+  - nlp_intro
+  
+
+responses:
+  utter_greet:
+  - text: "Hey! How its going?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+  - text: "Spending your present without your past and future is best way to cheer you up:"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_python:
+  - text: "Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects."
+  
+  utter_machinelearning:
+  - text: "Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention."
+  
+  
+  utter_datascience:
+  - text: "Data Science is the process of analzing data obtained or stored for generating information"
+  
+  utter_nlp:
+  - text: "Natural Language Processing is important area of Data Science and Artificial Intelligence which is used by most data centric application"
+  
+  utter_programming:
+  - text: "Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer programming languages, such as JavaScript, Python, and C++."
+   
+  utter_C:
+  - text: "C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions. It has found lasting use in applications previously coded in assembly language. Such applications include operating systems and various application software for computer architectures that range from supercomputers to PLCs and embedded systems."
+
+
+    
+  utter_C++:
+  - text: "C++  is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes. The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platforms."
+   
+  utter_java:
+  - text: "Java is a High Level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere "
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
